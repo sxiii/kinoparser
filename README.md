@@ -8,6 +8,7 @@ Also you can use this repo if you want to learn a bit of python, or maybe someth
 * (optional, but recommended) PrettyTable library - it's used to display results in a pretty table :)
 * (optional) Kinopoisk library - it's used to fetch rating results also from Kinopoisk website
 * git - to clone this repo
+* internet and PC :D - to clone the repo and connect to IMDb/Kinopoisk
 
 # Installation
 I'm not covering installation of Python 3 here. It's already installed in most of the Linux distributions. Please google if you need help in installation of Python.
@@ -39,7 +40,11 @@ For minimal installation, run:
 Or, if you have python 2 installed as default python interpretator, then
 `python3 ./name-of-the-choosen-script.py` - edit this accordingly.
 
+# Manipulating data
+You could easily remove or add data that you need/don't need. You have to do it every time only in two places: in the heading (`t.field_names`), and in the print row (`t.add_row`). If you would like to add your own, please read the IMDBpy docs here: https://imdbpy.readthedocs.io and Kinopoisk help here: https://github.com/ramusus/kinopoiskpy
+
 # Further development
+* improve the speed of loading data
 * make it possible to give file input with comma/tab/newline separated list of films
 * make the script parse some popular websites with films by itself
 
