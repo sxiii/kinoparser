@@ -48,11 +48,12 @@ Or, if you have python 2 installed as default python interpretator, then
 # Manipulating data
 You could easily remove or add data that you need/don't need. You have to do it every time only in two places: in the heading (`t.field_names`), and in the print row (`t.add_row`). If you would like to add your own, please read the IMDBpy docs here: https://imdbpy.readthedocs.io and Kinopoisk help here: https://github.com/ramusus/kinopoiskpy
 
-# Further development
+# Roadmap / Further development
 * improve the speed of loading data
 * make it possible to give file input with comma/tab/newline separated list of films
 * make the script parse some popular websites with films by itself
 
-# Issues
-If you have any problems, errors, issues, and cannot google them out (so they are related to the kinoparser source code), please create a github issue and show your errors etc.
+# How to contribute / Issues
+If you have any questions, problems, errors, issues, and cannot google them out (so they are related to the kinoparser source code), please create a github issue and show your errors etc.
 
+If you want to contribute some improvement feel free to make a pull request. Your contribution will be mentioned in the project.
