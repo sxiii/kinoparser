@@ -1,3 +1,5 @@
+![kinoparser](kinoparser.jpg)
+
 This repo is for the kinomaniacs. If you watch films frequently and often it's hard to choose for you the correct film, just grab a list of currently shown films in the cinema or maybe your own list of the films that you would like to see. Give this list to the python script and get recommendations in less than a minute. Easy as that!
 
 Also you can use this repo if you want to learn a bit of python, or maybe something about PrettyTable or IMDb / Kinopoisk API.
