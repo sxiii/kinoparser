@@ -29,16 +29,19 @@ There are 3 python files in there:
 # How to run?
 That's probably the easiest. First, clone the repo (if you don't have git installed, for ubuntu just do: `sudo apt install git`):
 `git clone https://github.com/sxiii/kinoparser`
+
 Ok, the scripts should have been downloaded. Now let's check them:
 `cd kinoparser && ls`
+
 It should show you 3 python scripts (imdb-plaintext.py, imdb-prettytable.py and imdb-kinopoisk-prettytable.py). In this case everything is corrent and we're already in the scripts directory, so just run them in linux CLI:
 `python ./name-of-the-choosen-script.py`
+
 For example, for full installation, run:
-`python ./imdb-kinopoisk-prettytable.py`
+* `python ./imdb-kinopoisk-prettytable.py`
 For normal installation, run:
-`python ./imdb-prettytable.py`
+* `python ./imdb-prettytable.py`
 For minimal installation, run:
-`python ./imdb-plaintext.py`
+* `python ./imdb-plaintext.py`
 Or, if you have python 2 installed as default python interpretator, then
 `python3 ./name-of-the-choosen-script.py` - edit this accordingly.
 
