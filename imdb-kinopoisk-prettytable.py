@@ -7,7 +7,7 @@ from prettytable import PrettyTable
 from kinopoisk.movie import Movie
 
 t = PrettyTable()
-t.field_names = ["Title", "Year", "IMDb Rating", "Kinopoisk Rating", "Genres", "Countries", "Runtime", "URL"]
+t.field_names = ["Title", "Year", "IMDb Rating", "Kinopoisk Rating", "Total Rating", "Genres", "Countries", "Runtime", "URL"]
 
 print ("Please wait, fetching film data...")
 i = IMDb()
@@ -21,6 +21,7 @@ for x in range(1, len(sys.argv)):
     countries = ", ".join(m['countries'])
     runtimes = ", ".join(m['runtimes'])
     filmurl = "https://imdb.com/title/tt" + str(s[0].movieID)
-    t.add_row([ str(m['title']), str(m['year']), str(m['rating']), movie_list[0].rating, genres, countries, runtimes, filmurl ])
+    totalrate = m['rating']+movie_list[0].rating
+    t.add_row([ str(m['title']), str(m['year']), str(m['rating']), movie_list[0].rating, totalrate, genres, countries, runtimes, filmurl ])
 print ('Done!')
 print (t.get_string(sortby="IMDb Rating"))
