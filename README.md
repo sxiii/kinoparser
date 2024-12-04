@@ -47,9 +47,11 @@ For minimal installation, run:
 * `python ./imdb-plaintext.py`
 Or, if you have python 2 installed as default python interpretator, then
 `python3 ./name-of-the-choosen-script.py` - edit this accordingly.
+Lastly, if you want the fastest speed
+* `python ./parallel.py`
 
 For a full example, run it with some names of the movies:
-`python ./ikp.py "Titanic" "Shawshenk Redeption" "The Saw" "Mr Nobody" "Mad Max" "Terminator"`
+`python ./parallel.py "Titanic" "Shawshenk Redeption" "Saw" "Mr Nobody" "Mad Max" "Terminator"`
 
 # Manipulating data
 You could easily remove or add data that you need/don't need. You have to do it every time only in two places: in the heading (`t.field_names`), and in the print row (`t.add_row`). If you would like to add your own, please read the IMDBpy docs here: https://imdbpy.readthedocs.io and Kinopoisk help here: https://github.com/ramusus/kinopoiskpy
