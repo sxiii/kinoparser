@@ -4,6 +4,8 @@ This repo is for the kinomaniacs. If you watch films frequently and often it's h
 
 Also, you can use this code to make different output: CSV/TSV and others, too (thanks to PrettyTable). Review its documentation for this. And you can use this repo if you want to learn a bit of python, or maybe something about PrettyTable or IMDb / Kinopoisk API.
 
+Interestingly enough, the repo has been around for over 6 years, and it's still working. There are some minor problems but they had been here from the beginning. I did some small updates to the code so it'll work a little more stable with empty/no ratings.
+
 # Requirements
 * Python 3 (probably will still work with python 2, but you'll have to manage to rewrite some stuff)
 * IMDb-py library - it's used to connect to IMDb
@@ -19,12 +21,13 @@ Please choose whenever you like to install (minimal, normal or full)
 * Minimal: `sudo pip install IMDbpy` - this will install only IMDb python library
 * Normal: `sudo pip install IMDbpy PrettyTable` - this installes IMDb and PrettyTable
 * Full: `sudo pip install IMDbpy PrettyTable kinopoiskpy` - this will install all 3 tools (IMDb, PrettyTable and Kinopoisk libraries)
-
+* Garuda/Arch Linux: `sudo pip install IMDbpy PrettyTable kinopoiskpy --break-system-packages` - it ain't gonna break anything
+  
 # What are the files here?
 There are 3 python files in there:
 * imdb-plaintext.py - to run it, you need only python 3 and IMDb library installed (minimal installation)
 * imdb-prettytable.py - to run it, you need python 3, IMDb and PrettyTable installed (normal installation)
-* imdb-kinopoisk-prettytable.py - to run it, you need all tools from the requirements (full installation)
+* ikp.py - IMDB, Kinopoisk & PrettyTable; updated version. To run it, you need all tools from the requirements (full installation)
 
 # How to run?
 That's probably the easiest. First, clone the repo (if you don't have git installed, for ubuntu just do: `sudo apt install git`):
@@ -44,6 +47,9 @@ For minimal installation, run:
 * `python ./imdb-plaintext.py`
 Or, if you have python 2 installed as default python interpretator, then
 `python3 ./name-of-the-choosen-script.py` - edit this accordingly.
+
+For a full example, run it with some names of the movies:
+`python ./ikp.py "Titanic" "Shawshenk Redeption" "The Saw" "Mr Nobody" "Mad Max" "Terminator"`
 
 # Manipulating data
 You could easily remove or add data that you need/don't need. You have to do it every time only in two places: in the heading (`t.field_names`), and in the print row (`t.add_row`). If you would like to add your own, please read the IMDBpy docs here: https://imdbpy.readthedocs.io and Kinopoisk help here: https://github.com/ramusus/kinopoiskpy
